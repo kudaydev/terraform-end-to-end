@@ -141,11 +141,6 @@ resource "aws_instance" "demoinstance" {
 
   # Attaching security group to our instance
   vpc_security_group_ids = ["${aws_security_group.demosg.id}"]
-
-  # Attaching Tag to Instance 
-  tags = {
-    Name = "Search-Head-${count.index + 1}"
-  }
   
   # Root Block Storage
   root_block_device {
