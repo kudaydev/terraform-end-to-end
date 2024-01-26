@@ -164,7 +164,7 @@ resource "aws_instance" "demoinstance" {
     # The default username for our AMI
     user = "ec2-user"
     # Private key for connection
-    private_key = "${file(var.private_key)}"
+    private_key = file("${var.private_key}.pem")
     # Type of connection
     type = "ssh"
   }
