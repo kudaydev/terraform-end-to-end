@@ -1,4 +1,4 @@
-name: Terraform-GitHub-Actions
+name: terraform-end-to-end
 on:
   push:
     branches: [ main ]
