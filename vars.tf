@@ -41,7 +41,7 @@ variable "ami" {
   }
 }
 
-# Defining Instace Type
+# Defining Instace Type new
 variable "instancetype" {
   default = "t2.micro"
 }
