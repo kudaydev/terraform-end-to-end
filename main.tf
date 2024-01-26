@@ -135,8 +135,6 @@ resource "aws_instance" "demoinstance" {
   # Instance type 
   instance_type = "${var.instancetype}"
   
-  # Count of instance
-  count= "${var.master_count}"
   
   # SSH key that we have generated above for connection
   key_name = "${aws_key_pair.demokey.id}"

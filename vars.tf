@@ -45,8 +45,3 @@ variable "ami" {
 variable "instancetype" {
   default = "t2.micro"
 }
-
-# Defining Master count 
-variable "master_count" {
-  default = 1
-}
